@@ -51,6 +51,16 @@ mat4 GetCameraViewProj()
     return myPerFrame.u_mCameraCurrViewProj;
 }
 
+mat4 GetCameraView()
+{
+    return myPerFrame.u_mCameraCurrView;
+}
+
+mat4 GetCameraProj()
+{
+    return myPerFrame.u_mCameraCurrProj;
+}
+
 mat4 GetPrevWorldMatrix()
 {
     return myPerObject.u_mPrevWorld;

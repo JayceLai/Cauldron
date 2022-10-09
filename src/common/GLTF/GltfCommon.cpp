@@ -615,6 +615,10 @@ per_frame* GLTFCommon::SetPerFrameData(const Camera& cam)
     //Sets the camera
     m_perFrameData.mCameraCurrViewProj = cam.GetProjection() * cam.GetView();
     m_perFrameData.mCameraPrevViewProj = cam.GetPrevProjection() * cam.GetPrevView();
+    m_perFrameData.mCameraCurrView = cam.GetView();
+    m_perFrameData.mCameraCurrProj = cam.GetProjection();
+    m_perFrameData.mCameraPrevView = cam.GetPrevView();
+    m_perFrameData.mCameraPrevProj = cam.GetPrevProjection();
     // more accurate calculation
     m_perFrameData.mInverseCameraCurrViewProj = math::affineInverse(cam.GetView()) * math::inverse(cam.GetProjection());
     m_perFrameData.cameraPos = cam.GetPosition();

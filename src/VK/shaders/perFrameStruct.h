@@ -51,6 +51,10 @@ struct PerFrame
 {
     mat4          u_mCameraCurrViewProj;
     mat4          u_mCameraPrevViewProj;
+    mat4          u_mCameraCurrView;
+    mat4          u_mCameraPrevView;
+    mat4          u_mCameraCurrProj;
+    mat4          u_mCameraPrevProj;
     mat4          u_mCameraCurrViewProjInverse;
 
     vec4          u_CameraPos;

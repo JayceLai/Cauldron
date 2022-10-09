@@ -83,6 +83,10 @@ struct per_frame
 {
     math::Matrix4 mCameraCurrViewProj;
     math::Matrix4 mCameraPrevViewProj;
+    math::Matrix4 mCameraCurrView;
+    math::Matrix4 mCameraPrevView;
+    math::Matrix4 mCameraCurrProj;
+    math::Matrix4 mCameraPrevProj;
     math::Matrix4  mInverseCameraCurrViewProj;
     math::Vector4  cameraPos;
     float     iblFactor;

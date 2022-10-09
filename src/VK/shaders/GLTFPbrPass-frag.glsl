@@ -147,6 +147,7 @@ void main()
 
     // Transform motion vector from NDC space to UV space (+Y is top-down).
     Output_motionVect *= vec2(0.5f, -0.5f);
+    // Output_motionVect = vec2(0, 0);
 #endif
 
 #ifdef HAS_SPECULAR_ROUGHNESS_RT
